@@ -1,6 +1,6 @@
-# Convex density constraints for computing plausible counterfactual explanations
+# Convex Density Constraints for Computing Plausible Counterfactual Explanations
 
-This repository contains the implementation of the methods proposed in the paper [Convex density constraints for computing plausible counterfactual explanations](paper.pdf) by André Artelt and Barbara Hammer.
+This repository contains the implementation of the methods proposed in the paper [Convex Density Constraints for Computing Plausible Counterfactual Explanations](paper.pdf) by André Artelt and Barbara Hammer.
 
 The proposed methods are implemented in [plausible_counterfactuals.py](plausible_counterfactuals.py). The experiments as described in the paper are implemented in [test.py](test.py).
 

@@ -32,7 +32,7 @@ if __name__ == "__main__":
     #X, y = load_breast_cancer(return_X_y=True);pca_dim=5
     #X, y = load_house_prices();pca_dim=10
     #X, y = load_wine(return_X_y=True);pca_dim=8
-    #X, y = load_digits(return_X_y=True);pca_dim=40
+    X, y = load_digits(return_X_y=True);pca_dim=40
 
     X, y = shuffle(X, y, random_state=42)
 
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     print("Computation time: With density constraint: {0} Without density constraint: {1}".format(np.median(computation_time_with_density_constraint), np.median(computation_time_without_density_constraint)))
     print("Distances: With density constraint: {0} {1} Without density constraint: {2} {3}".format(np.median(distances_with_density_constraint), np.mean(distances_with_density_constraint), np.median(distances_without_density_constraint), np.mean(distances_without_density_constraint)))
 
-    """
+    #"""
     # Plot some samples: Counterfactual generated with vs. without density constraint
     original_data = np.array(original_data)
     original_data_labels = np.array(original_data_labels)
@@ -228,4 +228,4 @@ if __name__ == "__main__":
     cfs_without_density_constraint = np.array(cfs_without_density_constraint)
     cfs_target_label = np.array(cfs_target_label)
     np.savez("cfs_comparision_data_softmax_regression", X_original=original_data, y_original=original_data_labels, y_target=cfs_target_label, X_with_density_constraint=cfs_with_density_constraint, X_without_density_constraint=cfs_without_density_constraint)
-    """
+    #"""

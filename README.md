@@ -21,4 +21,4 @@ MIT license - See [LICENSE](LICENSE)
 
 ## How to cite
 
-You can cite the version on [arXiv](https://arxiv.org/abs/2002.04862).
+You can cite the version on [arXiv](https://arxiv.org/abs/2002.04862) or the (shorter) conference version ICANN-2020.

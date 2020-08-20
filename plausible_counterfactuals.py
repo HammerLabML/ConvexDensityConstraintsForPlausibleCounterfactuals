@@ -273,7 +273,7 @@ class HighDensityEllipsoids:
             cov_i = np.linalg.inv(self.covariances[i])
 
             for j in range(n_samples):
-                if self.X_densities[j][i] <= self.density_threshold:  # At least as good as a requested NLL
+                if self.X_densities[j][i] >= self.density_threshold:  # At least as good as a requested NLL
                     x_j = self.X[j,:]
                     
                     a = (x_j - mu_i)
